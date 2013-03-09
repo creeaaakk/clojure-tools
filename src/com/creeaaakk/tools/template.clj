@@ -24,7 +24,7 @@
                                data (data k)]
                            (case t
                              :expr (gen data expr formats) 
-                             :list (gen-list expr case-map data)
+                             :list (gen-list expr formats data)
                              :fn (data)
                              (format "** ERROR %s not recognized **" t)))
          :else expr)))))
